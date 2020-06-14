@@ -1,8 +1,9 @@
 using System;
+using Template.Models.Entities.Base;
 
-namespace Template.Models
+namespace Template.Models.Entities
 {
-	public class WeatherForecast : BaseEntity
+	public class WeatherForecast : HaveId
 	{
 		public DateTime Date { get; set; }
 		public int TemperatureC { get; set; }

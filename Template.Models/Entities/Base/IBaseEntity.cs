@@ -1,6 +1,6 @@
-﻿namespace Template.Models
+﻿namespace Template.Models.Entities.Base
 {
-	public abstract class BaseEntity
+	public abstract class HaveId
 	{
 		public long Id { get; set; }
 	}

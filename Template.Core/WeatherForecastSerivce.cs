@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Template.Database;
-using Template.Models;
+using Template.Models.Entities;
 
 namespace Template.Core
 {

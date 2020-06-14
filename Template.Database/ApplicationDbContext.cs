@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Template.Models;
+using Template.Models.Entities;
 
 namespace Template.Database
 {
@@ -11,6 +12,12 @@ namespace Template.Database
 
 		public ApplicationDbContext(DbContextOptions options) : base(options)
 		{
+		}
+
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.UseNpgsql(ConnectionStrings.Current.Value);
+			base.OnConfiguring(optionsBuilder);
 		}
 
 		public DbSet<WeatherForecast> Forecasts { get; set; }

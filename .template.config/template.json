@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "classifications": [ "Common", "Web", "C#8" ],
+    "author": "d4n0n_myself",
+    "name": "d4n0n's template service",
+    "identity": "D4.ServiceTemplate",
+    "shortName": "servicetemplate",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "Template",
+    "preferNameDirectory" : true
+  }

@@ -6,7 +6,7 @@ using Template.Models.Enums;
 
 namespace Template.Web.Controllers
 {
-	[Microsoft.AspNetCore.Components.Route("[controller]/[action]")]
+	[Route("[controller]/[action]")]
 	public class Model1Controller : BaseController<Model1>
 	{
 		public Model1Controller(BaseDomainService<Model1> service) : base(service)
